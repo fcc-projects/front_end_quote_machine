@@ -1,0 +1,70 @@
+/*.container {
+	position: relative;
+}*/
+
+body {
+	background-color: #fff;
+	padding: 2rem;
+}
+
+.quote-container {
+	height: 95%;
+	max-height: 95vh;
+	font-family: 'Raleway', sans-serif;
+}
+
+.quote-text {
+	font-size: 7vh;
+	font-weight: bold;
+}
+
+.quote-author {
+	font-size: 3vh;
+	float: right;
+
+}
+
+.footer {
+	position:fixed;
+	bottom:0;
+	right:0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 4vh;
+	padding-right: 2rem;
+}
+
+.icon-container {
+	position: relative;
+	cursor: pointer;
+
+	text-align: right;
+}
+
+a {
+	position: relative;
+	right: 0;
+	bottom: -1.5vh;
+
+}
+
+img {
+	width: 4vh;
+	height: 4vh;
+	opacity: 0.2;
+}
+
+img:hover {
+	opacity: 1;
+}
+
+.tip-container {
+	cursor: pointer;
+}
+
+.tip-text {
+	display: inline-block;
+}
+
+.tip-container:hover {
+	opacity: 0.7;
+}
