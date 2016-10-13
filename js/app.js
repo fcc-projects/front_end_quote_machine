@@ -27,6 +27,7 @@ $(document).ready(function () {
 	        	getColor();
 				setColor();
 				setTwitterIntent();
+				setTwitterColor();
       		}
 		})
 	}
@@ -70,6 +71,13 @@ $(document).ready(function () {
 		$(element).css('color', color);
 	}
 
+
+	function setTwitterColor() {
+		$('svg').animate({ opacity: 0}, 200, function() {
+	          	$(this).css('fill', current_fg);
+	          	$(this).animate({ opacity: 1}, 500);
+	          });
+	}
 	function setTwitterIntent() {
 		$('.tweet-link').attr('href', "https://twitter.com/intent/tweet?text=" + encodeURIComponent('"' + current_quote + '" ' + current_author)); 
 	}
